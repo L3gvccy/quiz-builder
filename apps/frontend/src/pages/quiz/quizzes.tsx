@@ -52,17 +52,19 @@ const Quizzes = () => {
     <div className="flex justify-center w-full">
       <div className="flex flex-col gap-4 items-center w-full max-w-342 p-4">
         <div className="flex flex-col items-center gap-2 w-full rounded-3xl bg-white p-4 shadow-sm ring-1 ring-slate-200">
-          <p className="text-4xl">Quizzes</p>
+          <p className="text-3xl font-bold tracking-tight">Quizzes</p>
           <Link
             to="/create"
             className="flex items-center gap-2 w-fit bg-violet-600 text-white text-xl px-4 py-2 rounded-xl hover:bg-violet-500 transition-all duration-300"
           >
-            <Plus size={22} />
-            <p>Create quiz</p>
+            <Plus size={18} />
+            <p className="text-base font-semibold">Create quiz</p>
           </Link>
         </div>
         {quizzes.length > 0 ? (
-          quizzes.map((quiz) => <QuizCard quiz={quiz} onDelete={deleteQuiz} />)
+          quizzes.map((quiz) => (
+            <QuizCard key={quiz.id} quiz={quiz} onDelete={deleteQuiz} />
+          ))
         ) : (
           <p className="text-xl opacity-85">No quizzes found</p>
         )}

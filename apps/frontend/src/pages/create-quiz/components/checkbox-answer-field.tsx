@@ -25,7 +25,7 @@ const CheckboxOptionsField = ({
         <button
           type="button"
           onClick={onAddOption}
-          className="inline-flex items-center gap-2 rounded-lg bg-violet-50 px-3 py-2 text-sm font-medium text-violet-600 transition hover:bg-violet-100"
+          className="inline-flex items-center gap-2 rounded-lg bg-violet-50 px-3 py-2 text-sm font-medium text-violet-600 transition hover:bg-violet-100 cursor-pointer"
         >
           <Plus size={16} />
           Add option
@@ -63,7 +63,7 @@ const CheckboxOptionsField = ({
               <button
                 type="button"
                 onClick={() => onRemoveOption(optionIndex)}
-                className="inline-flex items-center justify-center rounded-xl bg-red-50 px-4 py-3 text-red-500 transition hover:bg-red-100"
+                className="inline-flex items-center justify-center rounded-xl bg-red-50 px-4 py-3 text-red-500 transition hover:bg-red-100 cursor-pointer"
               >
                 <Trash2 size={16} />
               </button>

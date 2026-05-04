@@ -62,7 +62,7 @@ const QuestionCard = ({
           <button
             type="button"
             onClick={onRemoveQuestion}
-            className="inline-flex items-center gap-2 rounded-lg bg-red-50 px-3 py-2 text-sm font-medium text-red-500 transition hover:bg-red-100"
+            className="inline-flex items-center gap-2 rounded-lg bg-red-50 px-3 py-2 text-sm font-medium text-red-500 transition hover:bg-red-100 cursor-pointer"
           >
             <Trash2 size={16} />
             Remove

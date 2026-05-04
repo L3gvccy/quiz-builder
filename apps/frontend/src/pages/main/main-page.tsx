@@ -1,3 +1,4 @@
+import { ArrowRight, ChevronRight } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -8,9 +9,10 @@ const MainPage = () => {
       <p className="text-lg">Welcome to quiz builder app!</p>
       <Link
         to="/quizzes"
-        className="bg-violet-600 text-white text-xl px-4 py-2 rounded-xl hover:bg-violet-500 transition-all duration-300"
+        className="inline-flex items-center gap-2 bg-violet-600 text-white text-xl px-4 py-2 rounded-xl hover:bg-violet-500 transition-all duration-300"
       >
-        Go to quizzes
+        <p>Go to quizzes</p>
+        <ChevronRight size={18} />
       </Link>
     </div>
   );
