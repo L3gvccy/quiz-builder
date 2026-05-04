@@ -22,7 +22,6 @@ enum QuestionType {
 model Quiz {
   id          String     @id @default(uuid())
   title       String
-  description String?
 
   questions   Question[]
 

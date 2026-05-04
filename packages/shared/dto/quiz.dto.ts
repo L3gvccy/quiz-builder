@@ -1,4 +1,4 @@
-import { QuestionType } from "../types/quiz";
+import type { QuestionType } from "../types/quiz";
 
 export interface CreateAnswerOptionDto {
   text: string;
@@ -16,6 +16,5 @@ export interface CreateQuestionDto {
 
 export interface CreateQuizDto {
   title: string;
-  description?: string;
   questions: CreateQuestionDto[];
 }

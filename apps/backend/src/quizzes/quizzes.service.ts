@@ -11,7 +11,6 @@ export class QuizzesService {
     return this.prisma.quiz.create({
       data: {
         title: dto.title,
-        description: dto.description,
         questions: {
           create: dto.questions.map((question) => ({
             title: question.title,
